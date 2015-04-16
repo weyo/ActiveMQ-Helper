@@ -1,31 +1,12 @@
 package io.weyo.activemq.common.topic;
 
+import io.weyo.activemq.common.Consumer;
+import io.weyo.activemq.common.Producer;
+
 /**
  * Topic
  * @author weyo
  */
-public class Topic {
-	private String name;
-	private Offset offset;
+public interface Topic<E> extends Consumer<E>, Producer {
 	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Offset getOffset() {
-		return offset;
-	}
-
-	public void setOffset(Offset offset) {
-		this.offset = offset;
-	}
-
-	class Offset {
-		long size;
-		long position;
-	}
 }

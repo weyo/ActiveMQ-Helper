@@ -8,4 +8,10 @@ import io.weyo.activemq.common.Connector;
  */
 public abstract class JMSConnector implements Connector {
 
+	enum State {
+		CONNECTING, CONNECTED, CLOSED
+	}
+	
+	protected JMSConnector() {
+	}
 }

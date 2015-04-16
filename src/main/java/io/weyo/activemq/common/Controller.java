@@ -4,7 +4,7 @@ package io.weyo.activemq.common;
  * Controller
  * @author weyo
  */
-public interface Controller<T> {
+public interface Controller {
 
 	void start();
 	

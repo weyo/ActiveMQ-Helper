@@ -1,26 +1,12 @@
 package io.weyo.activemq.common.queue;
 
+import io.weyo.activemq.common.Consumer;
+import io.weyo.activemq.common.Producer;
+
 /**
  * Queue
  * @author weyo
  */
-public class Queue {
-	private String name;
-	private long number;
+public interface Queue<E> extends Consumer<E>, Producer{
 	
-	public String getName() {
-		return name;
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public long getNumber() {
-		return number;
-	}
-	
-	public void setNumber(long number) {
-		this.number = number;
-	}
 }
