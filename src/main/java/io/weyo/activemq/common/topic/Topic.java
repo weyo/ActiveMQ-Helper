@@ -1,12 +1,12 @@
 package io.weyo.activemq.common.topic;
 
 import io.weyo.activemq.common.Consumer;
-import io.weyo.activemq.common.Producer;
+import io.weyo.activemq.common.Transaction;
 
 /**
  * Topic
  * @author weyo
  */
-public interface Topic<E> extends Consumer<E>, Producer {
+public interface Topic<E, T> extends Consumer<E>, Transaction<T> {
 	
 }
