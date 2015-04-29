@@ -1,5 +1,6 @@
-package io.weyo.activemq.common.jms;
+package me.weyo.activemq.common.jms;
 
+import javax.jms.Connection;
 import javax.jms.DeliveryMode;
 import javax.jms.Destination;
 import javax.jms.JMSException;
@@ -13,13 +14,14 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 /**
  * DefaultQueueConnector
  * 
- * @author weyo
+ * @author WeYo
  */
-public class DefaultQueueConnector extends
-		AbstractQueueConnector<Message, String> {
+public class DefaultQueueConnector implements QueueConnector<Message, String> {
 
 	protected String url;
 	protected String queue;
+	protected Connection connection;
+	protected Session session;
 	private MessageConsumer consumer;
 	private MessageProducer producer;
 	private Destination destination;

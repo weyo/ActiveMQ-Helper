@@ -1,9 +1,9 @@
-package io.weyo.activemq.common;
+package me.weyo.activemq.common;
 
 
 /**
  * Producer
- * @author weyo
+ * @author WeYo
  */
 public interface Producer<T> {
 

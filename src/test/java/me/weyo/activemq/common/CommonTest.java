@@ -1,9 +1,10 @@
-package io.weyo.activemq.common;
-
-import io.weyo.activemq.common.jms.SimpleQueueConsumer;
+package me.weyo.activemq.common;
 
 import javax.jms.Message;
 import javax.jms.TextMessage;
+
+import me.weyo.activemq.common.Consumer;
+import me.weyo.activemq.common.jms.SimpleQueueConsumer;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -14,7 +15,7 @@ import org.junit.Test;
 /**
  * CommonTest
  * 
- * @author weyo
+ * @author WeYo
  */
 public class CommonTest {
 	private static final String DEFAULT_HOST = "192.168.2.233";

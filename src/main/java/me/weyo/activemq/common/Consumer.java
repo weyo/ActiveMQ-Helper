@@ -1,9 +1,9 @@
-package io.weyo.activemq.common;
+package me.weyo.activemq.common;
 
 
 /**
  * Consumer
- * @author weyo
+ * @author WeYo
  */
 public interface Consumer<E> extends Connector{
 

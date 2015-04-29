@@ -1,9 +1,9 @@
-package io.weyo.activemq.common;
+package me.weyo.activemq.common;
 
 
 /**
  * Connector
- * @author weyo
+ * @author WeYo
  */
 public interface Connector {
 	void connect() throws Exception;

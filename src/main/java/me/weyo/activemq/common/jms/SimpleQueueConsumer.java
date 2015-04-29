@@ -1,4 +1,4 @@
-package io.weyo.activemq.common.jms;
+package me.weyo.activemq.common.jms;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
@@ -6,7 +6,7 @@ import javax.jms.Message;
 
 /**
  * SimpleQueueConsumer
- * @author weyo
+ * @author WeYo
  */
 public class SimpleQueueConsumer extends MessageQueueConsumer {
 

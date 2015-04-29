@@ -1,8 +1,8 @@
-package io.weyo.activemq.common;
+package me.weyo.activemq.common;
 
 /**
  * Transaction
- * @author weyo
+ * @author WeYo
  */
 public interface Transaction<T> extends Producer<T> {
 

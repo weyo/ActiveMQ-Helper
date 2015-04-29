@@ -1,8 +1,8 @@
-package io.weyo.activemq.common;
+package me.weyo.activemq.common;
 
 /**
  * Controller
- * @author weyo
+ * @author WeYo
  */
 public interface Controller {
 
