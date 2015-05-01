@@ -1,5 +1,5 @@
 # ActiveMQ-Helper
-A light-weight working ActiveMQ utility.
+A simple and flexible working ActiveMQ utility.
 
 ---
 ## How to use
