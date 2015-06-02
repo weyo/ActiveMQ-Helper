@@ -18,6 +18,11 @@ public class QueueConnection {
 	protected MessageConsumer consumer;
 	protected MessageProducer producer;
 	
+	public QueueConnection(String url, String queue) {
+		this.url = url;
+		this.queue = queue;
+	}
+	
 	protected void closeConsumer() throws JMSException {
 		if (this.consumer != null) {
 			this.consumer.close();

@@ -20,8 +20,7 @@ public class DefaultQueueConnector extends QueueConnection implements QueueConne
 	private Destination destination;
 
 	public DefaultQueueConnector(String url, String queue) {
-		this.url = url;
-		this.queue = queue;
+		super(url, queue);
 	}
 
 	@Override
@@ -29,6 +28,7 @@ public class DefaultQueueConnector extends QueueConnection implements QueueConne
 		return consume(1000);
 	}
 
+	@Override
 	public Message consume(long timeout) throws JMSException {
 		return consumer.receive(timeout);
 	}

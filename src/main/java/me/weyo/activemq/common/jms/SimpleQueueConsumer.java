@@ -19,6 +19,11 @@ public class SimpleQueueConsumer extends MessageQueueConsumer {
 	public Message consume() throws JMSException {
 		return this.queueConnector.consume();
 	}
+	
+	@Override
+	public Message consume(long timeout) throws JMSException {
+		return this.queueConnector.consume(timeout);
+	}
 
 	@Override
 	public void connect() throws JMSException {

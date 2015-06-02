@@ -1,19 +1,15 @@
 package me.weyo.activemq.common.jms;
 
-import javax.jms.JMSException;
-
-import me.weyo.activemq.common.Connector;
+import me.weyo.activemq.common.JMSConnector;
 
 /**
  * JMSConnector
  * @author WeYo
  */
-public interface ActiveMQConnector extends Connector {
+public interface ActiveMQConnector extends JMSConnector {
 
 	enum State {
 		CONNECTING, CONNECTED, CLOSED
 	}
 	
-	@Override void connect() throws JMSException;
-	@Override void close() throws JMSException;
 }

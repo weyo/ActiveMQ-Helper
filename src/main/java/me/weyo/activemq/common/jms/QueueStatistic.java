@@ -108,6 +108,10 @@ public class QueueStatistic extends QueueConnection implements
 	private static final Logger LOG = Logger.getLogger(QueueStatistic.class);
 	private MapMessage reply;
 
+	public QueueStatistic(String url, String queue) {
+		super(url, queue);
+	}
+
 	@Override
 	public void connect() throws JMSException {
 		ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(
